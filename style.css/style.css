@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 10px;
+}
+
+:root {
+    --background-color: #ce1212;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+.logo span {
+    color: red;
+}
+
+.navflex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.main-menu {
+    display: flex;
+}
+
+
+.main-menu li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 23px;
+    bottom: -5px;
+    background-color: var(--background-color);
+    transition: all .5s ease;
+}
+
+.main-menu li a:hover::after {
+    width: 50%;
+}
+
+.main-menu li a {
+    text-decoration: none;
+    padding: 0 25px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    color: #7f7f90;
+    padding-bottom: 6px;
+    transition: all .5s ease;
+    position: relative;
+}
+
+.main-menu li {
+    list-style: none;
+}
+
+.head-btn {
+    color: white;
+    text-decoration: none;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    transition: all .5s ease;
+
+}
+
+.head-btn:hover {
+    background-color: #ce1212d2;
+
+}
+
+#hero-section {
+    padding: 80px 0;
+    background-color: #c4c4cb37;
+
+}
+
+.hero-main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.left-main {
+    width: 65%;
+    margin-top: 60px;
+
+}
+
+.left-main h1 {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 64px;
+    margin: 0;
+}
+
+.hero-para {
+    font-size: 20px;
+    color: #444444;
+    margin-top: 10px;
+}
+
+.hero-group {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.hero-btn2 {
+    color: white;
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 25px;
+    background-color: var(--background-color);
+    transition: all .5s ease;
+
+
+}
+
+.hero-btn2:hover {
+    background-color: #ce1212d2;
+}
+
+.hero-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: all .5s ease;
+}
+
+.hero-icon:hover,
+.hero-icon:hover .hero-span {
+    color: var(--background-color);
+
+
+}
+
+.hero-icon i {
+    font-size: 35px;
+    color: red;
+
+    margin-right: 5px;
+}
+
+.hero-span {
+    color: black;
+    font-size: 18px;
+    font-family: "Roboto", sans-serif;
+    transition: all .5s ease;
+}
+
+.right-main {
+    width: 35%;
+
+}
+
+.hero-img {
+    width: 100%;
+
+}
