@@ -273,10 +273,93 @@ body {
     color: var(--background-color);
     padding-right: 7px;
 }
+
 .about-list li p {
     margin: 0;
 }
 
 .second-right-para {
     margin-bottom: 15px;
+}
+
+#cards-section {
+    background-color: #6d6c6c16;
+    padding: 60px 0;
+}
+
+.flex-cards {
+    display: flex;
+    gap: 20px;
+}
+
+.red-card {
+    background-color: var(--background-color);
+    padding: 25px;
+    color: white;
+    flex: 2;
+
+}
+
+.red-card h3 {
+    font-size: 34px;
+    margin: 0;
+
+}
+
+.red-card p {
+    margin-bottom: 50px;
+}
+
+.bg-btn {
+    text-align: center;
+
+}
+
+.card-btn {
+    color: white;
+    text-decoration: none;
+    background-color: #d958585f;
+    padding: 10px 35px;
+    border-radius: 20px;
+    transition: all .5s ease;
+}
+
+.card-btn:hover {
+    background-color: white;
+    color: var(--background-color);
+}
+
+.common-card {
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    flex: 1;
+
+}
+
+.common-card:hover .clip-icon,
+.common-card:hover .diamond-icon,
+.common-card:hover .inbox-icon {
+    background-color: var(--background-color);
+    color: white;
+}
+.clip-icon,
+.diamond-icon,
+.inbox-icon {
+    background-color: #c8232312;
+    color: var(--background-color);
+    width: 70px;
+    height: 70px;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: auto;
+    transition: all .5s ease;
+
 }
