@@ -2,6 +2,9 @@
 
 body {
     font-family: "Roboto", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -347,6 +350,7 @@ body {
     background-color: var(--background-color);
     color: white;
 }
+
 .clip-icon,
 .diamond-icon,
 .inbox-icon {
@@ -362,4 +366,46 @@ body {
     margin: auto;
     transition: all .5s ease;
 
+}
+
+#background-img {
+    background-image: url(../images/stats-bg.jpg);
+    background-size: cover;
+    padding: 60px 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+#background-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.bg-flex {
+    display: flex;
+    justify-content: space-evenly;
+     min-height: 250px;
+    align-items: center;
+    color: white;
+}
+
+.bg-content {
+    text-align: center;
+    position: relative;
+    z-index: 10;
+}
+.bg-content p {
+    color: rgba(255, 255, 255, 0.584);
+    font-weight: 600;
+     margin: 8px 0;
+}
+.bg-content h1 {
+    font-size: 48px;
+     margin: 0;
 }
