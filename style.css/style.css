@@ -390,7 +390,7 @@ body {
 .bg-flex {
     display: flex;
     justify-content: space-evenly;
-     min-height: 250px;
+    min-height: 250px;
     align-items: center;
     color: white;
 }
@@ -400,12 +400,116 @@ body {
     position: relative;
     z-index: 10;
 }
+
 .bg-content p {
     color: rgba(255, 255, 255, 0.584);
     font-weight: 600;
-     margin: 8px 0;
+    margin: 8px 0;
 }
+
 .bg-content h1 {
     font-size: 48px;
-     margin: 0;
+    margin: 0;
+}
+
+#menu-sec {
+    padding: 60px 0;
+}
+
+.menu-heading {
+    text-align: center;
+}
+
+.menu-heading p {
+    color: #44444462;
+    font-size: 15px;
+}
+
+.yummy-menu {
+    font-family: "Amatic SC", sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+
+.yummy-menu span {
+    color: var(--background-color);
+}
+
+.menu-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 30px;
+}
+
+.menu-list li a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid rgba(211, 211, 211, 0.767);
+    padding-bottom: 12px;
+    font-size: 18px;
+    transition: all .5s ease;
+
+}
+
+.menu-list li a:hover {
+    border-color: var(--background-color);
+}
+
+.menu-list li .active {
+    border-bottom: 2px solid var(--background-color);
+}
+
+.after-menu-div {
+    text-align: center;
+    padding: 35px 0;
+
+}
+
+.after-menu-div p {
+    margin: 0;
+    color: #444444ae;
+}
+
+.starter-menu {
+    font-family: "Amatic SC", sans-serif;
+    color: var(--background-color);
+    font-size: 45px;
+    margin: 0;
+}
+
+.menu-plates {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.common-menu {
+    flex: 1 1 300px;
+    max-width: 350px;
+
+}
+
+.common-menu h4 {
+    font-size: 25px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.menu-items-price {
+    color: var(--background-color);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.menu-items-para {
+    color: #44444484;
+}
+
+.common-menu img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
 }
