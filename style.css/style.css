@@ -617,7 +617,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 450px; 
+    height: 450px;
 
 }
 
@@ -626,7 +626,7 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 450px; 
+    min-height: 450px;
 
 }
 
@@ -691,4 +691,88 @@ body {
 .grandchild {
     color: white;
 
+}
+
+#chefs {
+    padding: 60px 0;
+}
+.chef-detail {
+    color: rgba(0, 0, 0, 0.324);
+    margin: 5px;
+}
+
+.p-chef {
+    display: flex;
+    gap: 20px;
+}
+.chef-heading-1 {
+    margin-bottom: 50px;
+}
+.chef-heading {
+    margin: 0;
+    color: #37373f;
+    font-size: 20px;
+}
+.chef-images {
+    position: relative;
+}
+.chef-second-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    filter: invert(1);
+}
+
+.child-chef {
+    flex: 1;
+    text-align: center;
+    box-shadow: 0 0 8px 0px #00000026;
+    border-radius: 10px;
+    position: relative;
+    transition: all .4s ease-out;
+    overflow: hidden;
+}
+.child-chef:hover {
+    transform: scale(1.06);
+}
+.child-chef:hover .socials{ 
+    transform: translateX(-10px);
+
+
+}
+.chef-desc {
+    padding: 10px 20px;
+}
+
+
+.child-chef img {
+    width: 100%;
+
+}
+.chef-para {
+    font-style: italic;
+    color: #444444;
+    line-height: 26px;
+}
+.socials {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 0.368);
+    margin-top: 10px;
+    border-radius: 5px;
+    transform: translateX(50px);
+    transition: all .5s ease;
+}
+.socials a {
+    padding-bottom: 5px;
+    display: block;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.34);
+    transition: all .5s ease;
+}
+.socials a:hover {
+    color: black;
 }
