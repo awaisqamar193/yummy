@@ -922,3 +922,66 @@ body {
     border-radius: 50%;
     color: white;
 }
+* {
+    
+}
+
+.last-form {
+    margin: 45px auto;
+    box-shadow: 0px 0px 5px 0px #705a5a30;
+    padding: 25px;
+    text-align: center;
+   
+
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+.form-row input {
+    flex: 1;
+}
+
+.subject-row input {
+    width: 97%;
+    margin: 20px 0;
+}
+
+.msg-row textarea {
+    width: 97%;
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+}
+
+.msg-row textarea:focus {
+    border-color: var(--background-color);
+}
+
+.common-input input {
+    padding: 15px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.256);
+
+}
+
+.common-input input:focus {
+    border-color: var(--background-color);
+}
+
+.btn-msg {
+    padding: 14px 30px;
+    background-color: var(--background-color);
+    margin: 20px 0;
+    font-size: 15px;
+    border-radius: 30px;
+    color: white;
+    border: none;
+    transition: all .5s ease;
+}
+
+.btn-msg:hover {
+    background-color: #ce1212d2;
+}
